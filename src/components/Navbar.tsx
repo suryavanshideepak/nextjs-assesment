@@ -11,6 +11,10 @@ const Navbar: React.FC = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleCloseToggle = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
     return (
         <nav className="bg-[#7dd3fc] p-5">
             <div className="container mx-auto flex justify-between items-center">
@@ -69,19 +73,19 @@ const Navbar: React.FC = () => {
             {isMenuOpen && (
                 <div className=" inset-0 z-50 bg-[#7dd3fc] lg:hidden mt-16">
                     <div className="flex flex-col items-center space-y-4 py-4">
-                        <Link href="/">
+                        <Link href="/" onClick={handleCloseToggle}>
                             <div className="text-[#FF6A3D] hover:text-orange-500">Blog</div>
                         </Link>
-                        <Link href="/user">
+                        <Link href="/user" onClick={handleCloseToggle}>
                             <div className="text-[#FF6A3D] hover:text-orange-500">User</div>
                         </Link>
-                        <Link href="/products">
+                        <Link href="/products" onClick={handleCloseToggle}>
                             <div className="text-[#FF6A3D] hover:text-orange-500">Products</div>
                         </Link>
-                        <Link href="/counter">
+                        <Link href="/counter" onClick={handleCloseToggle}>
                             <div className="text-[#FF6A3D] hover:text-orange-500">Counter</div>
                         </Link>
-                        <Link href="/todo">
+                        <Link href="/todo" onClick={handleCloseToggle}>
                             <div className="text-[#FF6A3D] hover:text-orange-500">Todo</div>
                         </Link>
 

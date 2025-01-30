@@ -1,8 +1,15 @@
 export interface Post {
-    id:number;
-    title:string;
-    author:string;
-    content:string;
+    id?:any;
+    image?: string;
+    title?: string;
+    type?: string;
+    shortDescription?: string;
+    author?: string;
+    avatar?: string;
+    readTime?: string;
+    likes?: number;
+    dislikes?: number;
+    comments?: number;
 }
 
 export interface User {
