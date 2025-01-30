@@ -20,11 +20,13 @@ export default function Post({ post }: PostProps) {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.shortDescription} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content={post.image} />
         <meta property="og:url" content={`https://yourdomain.com/posts/${post.id}`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.shortDescription} />
+        <meta property="twitter:image" content={post.image} />
       </Head>
       <div style={{
         height:'90vh',
