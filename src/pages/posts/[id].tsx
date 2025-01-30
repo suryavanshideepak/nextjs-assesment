@@ -15,15 +15,15 @@ export default function Post({ post }: PostProps) {
     <>
     <Head>
         <title>{post.title} | My Blog</title>
-        <meta name="description" content={post.content} />        
+        <meta name="description" content={post.shortDescription} />        
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.content} />
+        <meta property="og:description" content={post.shortDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://yourdomain.com/posts/${post.id}`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.content} />
+        <meta name="twitter:description" content={post.shortDescription} />
       </Head>
       <div style={{
         display:'flex',
@@ -38,7 +38,7 @@ export default function Post({ post }: PostProps) {
       <p>
         <strong>Author:</strong> {post.author}
       </p>
-      <p>{post.content}</p>
+      <p>{post.shortDescription}</p>
     </div>
     </>
     
