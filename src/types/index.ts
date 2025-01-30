@@ -10,6 +10,7 @@ export interface Post {
     likes?: number;
     dislikes?: number;
     comments?: number;
+    blogData:string;
 }
 
 export interface User {
