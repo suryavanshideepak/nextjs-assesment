@@ -14,7 +14,7 @@ const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col items-center justify-center p-5 ${
+      className={`min-h-screen flex flex-col items-center justify-center p-2 ${
         theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'
       }`}
     >

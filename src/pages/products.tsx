@@ -28,7 +28,7 @@ const Products: React.FC<ProductTypeProps> = ({products}) =>{
             backgroundColor: theme === 'light' ? '#ffffff' : '#000000',
             color: theme === 'light' ? '#000000' : '#ffffff',
         }}>
-        <h1 className="p-2 text-4xl">Product List</h1>
+        <h1 className="p-5 text-4xl">Product List</h1>
             <div style={{ display: 'flex',justifyContent:"center", flexWrap: 'wrap', gap: '20px' }}>
             {products.map((product) => (
                 <div key={product.id} style={{ width: '300px', border: '1px solid #ccc', padding: '10px', borderRadius: '8px', cursor:'pointer' }} onClick={()=>handleClickProduct(product)}>
